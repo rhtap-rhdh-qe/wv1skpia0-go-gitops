@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: wv1skpia0-go
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: wv1skpia0-go 
+  name: wv1skpia0-go
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: wv1skpia0-go 
